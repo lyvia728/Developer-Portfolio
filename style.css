@@ -319,3 +319,71 @@
  .project-card a:hover {
      color: #facc15;
  }
+
+ .project-links {
+     margin-top: auto;
+     padding-top: 10px;
+ }
+
+ /* ===== CONTACT SECTION ===== */
+ #contact {
+     background: #0f172a;
+     padding: 80px 20px;
+     text-align: center;
+ }
+
+ #contact h2 {
+     font-size: 36px;
+     color: #38bdf8;
+     margin-bottom: 10px;
+ }
+
+ #contact p {
+     color: #94a3b8;
+     margin-bottom: 30px;
+ }
+
+ /* GRID LAYOUT */
+ .contact-container {
+     max-width: 900px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
+ }
+
+ /* CARD STYLE */
+ .contact-item {
+     background: #1e293b;
+     padding: 20px;
+     border-radius: 12px;
+     border: 1px solid #334155;
+     transition: 0.3s;
+ }
+
+ /* hover effect */
+ .contact-item:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+ }
+
+ /* titles */
+ .contact-item h3 {
+     color: #38bdf8;
+     margin-bottom: 8px;
+ }
+
+ /* text */
+ .contact-item p {
+     color: #e2e8f0;
+ }
+
+ /* links */
+ .contact-item a {
+     color: #38bdf8;
+     text-decoration: none;
+ }
+
+ .contact-item a:hover {
+     color: #facc15;
+ }
