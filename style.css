@@ -1,8 +1,135 @@
+ /* ===== GLOBAL ===== */
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: #0f172a;
+     color: #e2e8f0;
+ }
+
+ /* ===== NAVBAR ===== */
  nav {
-     background: #09192f;
+     background: #1e293b;
      color: white;
      padding: 15px 40px;
      position: sticky;
      top: 0;
      z-index: 10;
+     border-bottom: 1px solid #334155;
+ }
+
+ nav h1 {
+     display: inline;
+     color: #38bdf8;
+     letter-spacing: 1px;
+ }
+
+ nav ul {
+     float: right;
+     list-style: none;
+ }
+
+ nav ul li {
+     display: inline;
+     margin-left: 20px;
+ }
+
+ nav ul li a {
+     color: #e2e8f0;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+
+ nav ul li a:hover {
+     color: #38bdf8;
+ }
+
+ /* ===== HOME SECTION ===== */
+ .home {
+     background: linear-gradient(135deg, #0f172a, #1e293b);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* Overlay (modern soft glow) */
+ .overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: radial-gradient(circle, rgba(56, 189, 248, 0.15), transparent 60%);
+     z-index: 0;
+ }
+
+ /* CONTENT */
+ .home-content {
+     position: relative;
+     z-index: 1;
+     max-width: 700px;
+     padding: 20px;
+ }
+
+ /* TEXT */
+ .home h1 {
+     font-size: 60px;
+     color: #e2e8f0;
+ }
+
+ .home h1 span {
+     color: #38bdf8;
+ }
+
+ .home h2 {
+     margin-top: 15px;
+     font-size: 30px;
+     color: #94a3b8;
+ }
+
+ .home p {
+     margin-top: 20px;
+     font-size: 18px;
+     color: #cbd5e1;
+     line-height: 1.6;
+ }
+
+ /* BUTTONS */
+ .home-buttons {
+     margin-top: 30px;
+ }
+
+ /* PRIMARY BUTTON */
+ .btn-main {
+     background: #38bdf8;
+     color: #0f172a;
+     padding: 14px 26px;
+     text-decoration: none;
+     border-radius: 8px;
+     margin-right: 10px;
+     font-weight: bold;
+     transition: 0.3s;
+ }
+
+ .btn-main:hover {
+     background: #0ea5e9;
+ }
+
+ /* OUTLINE BUTTON */
+ .btn-outline {
+     border: 2px solid #38bdf8;
+     padding: 14px 26px;
+     text-decoration: none;
+     border-radius: 8px;
+     color: #38bdf8;
+     transition: 0.3s;
+ }
+
+ .btn-outline:hover {
+     background: #38bdf8;
+     color: #0f172a;
  }
