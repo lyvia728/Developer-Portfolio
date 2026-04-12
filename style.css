@@ -327,19 +327,19 @@
 
  /* ===== CONTACT SECTION ===== */
  #contact {
-     background: #0f172a;
+     background: #637780;
      padding: 80px 20px;
      text-align: center;
  }
 
  #contact h2 {
      font-size: 36px;
-     color: #38bdf8;
+     color: white;
      margin-bottom: 10px;
  }
 
  #contact p {
-     color: #94a3b8;
+     color: #facc15;
      margin-bottom: 30px;
  }
 
@@ -354,7 +354,7 @@
 
  /* CARD STYLE */
  .contact-item {
-     background: #1e293b;
+     background: white;
      padding: 20px;
      border-radius: 12px;
      border: 1px solid #334155;
@@ -380,10 +380,42 @@
 
  /* links */
  .contact-item a {
-     color: #38bdf8;
+     color: #facc15;
      text-decoration: none;
  }
 
  .contact-item a:hover {
      color: #facc15;
  }
+/* ===== FOOTER ===== */
+.footer {
+    background: #1e293b;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #334155;
+}
+
+.footer p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* footer links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+}
