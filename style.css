@@ -1,0 +1,8 @@
+ nav {
+     background: #09192f;
+     color: white;
+     padding: 15px 40px;
+     position: sticky;
+     top: 0;
+     z-index: 10;
+ }
