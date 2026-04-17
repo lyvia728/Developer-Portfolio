@@ -32,3 +32,11 @@ if (aboutLine) {
 
     aboutTypewriter.typeString(aboutText).start();
 }
+
+function openForm() {
+    document.getElementById("hireForm").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("hireForm").style.display = "none";
+}

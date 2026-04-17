@@ -41,9 +41,9 @@
     
             <div class="home-buttons">
     
-                <a href="" class="btn-main">
-                    Hire Me
-                </a>
+             <a href="#" class="btn-main" onclick="openForm()">
+               Hire Me
+            </a> 
     
                 <a href="C:\Users\User Name\OneDrive\Desktop\Developer Portfolio\NKOMO_WL_softDev.pdf.pdf" class="btn-outline">
                     Download CV
@@ -164,39 +164,29 @@
         </div>
     </section>
 
-    
-        <section id="contact">
-        
-            <h2>Contact Me</h2>
-        
-            <p>Feel free to reach out for opportunities or collaborations.</p>
-        
-            <div class="contact-container">
-        
-                <div class="contact-item">
-                    <h3>📧 Email</h3>
-                    <p>Welilelyvia@gmail.com</p>
-                </div>
-        
-                <div class="contact-item">
-                    <h3>📱 Phone</h3>
-                    <p>0768728865</p>
-                </div>
-        
-                <div class="contact-item">
-                    <h3>💻 GitHub</h3>
-                    <p><a href="https://github.com/lyvia728" target="_blank">View Profile</a></p>
-                </div>
-        
-                <div class="contact-item">
-                    <h3>🌐 Location</h3>
-                    <p> South Africa</p>
-                </div>
-        
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for opportunities or collaborations.</p>
+        <div class="contact-container">
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>Welilelyvia@gmail.com</p>
             </div>
-        
-        
+            <div class="contact-item">
+                <h3>📱 Phone</h3>
+                <p>0768728865</p>
+            </div>
+            <div class="contact-item">
+                <h3>💻 GitHub</h3>
+                <p><a href="https://github.com/lyvia728" target="_blank">View Profile</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>🌐 Location</h3>
+                <p> South Africa</p>
+            </div>
+        </div>
     </section>
+        
 <footer class="footer">
     <p>© 2026 Nkomo Welile. All Rights Reserved.</p>
 
@@ -209,5 +199,33 @@
     </div>
 </footer>
     <script src="index.js"></script>
+
+    <!-- HIRE ME POPUP FORM -->
+    
+    <div id="hireForm" class="form-popup">
+    
+        <div class="form-box">
+    
+            <span class="close-btn" onclick="closeForm()">✖</span>
+    
+            <h2>Hire Me</h2>
+    
+            <form action="https://formspree.io/f/xojydqan" method="POST">
+    
+                <input type="text" name="name" placeholder="Your Name" required>
+    
+                <input type="email" name="email" placeholder="Your Email" required>
+    
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                <button type="submit" class="btn-main">
+                    Send Message
+                </button>
+    
+            </form>
+    
+        </div>
+    
+    </div>
 </body>
 </html>
