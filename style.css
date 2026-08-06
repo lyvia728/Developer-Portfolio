@@ -248,11 +248,16 @@ nav ul li a:hover {
     width: 80%;
     background: #22c55e;
 }
+.php {
+    width: 75%;
+    background: #777BB4;
+}
 
 .git {
     width: 70%;
     background: #ef4444;
 }
+
 
 /* ===== PROJECTS SECTION ===== */
 #projects {
@@ -261,7 +266,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* heading */
+/* HEADING */
 #projects h2 {
     font-size: 36px;
     color: #38bdf8;
@@ -271,59 +276,100 @@ nav ul li a:hover {
 /* GRID */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* CARD */
 .project-card {
-    background: white;
+    background: #ffffff;
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #334155;
     text-align: left;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* hover effect */
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-/* project title */
+/* TITLE */
 .project-card h3 {
     color: #0f172a;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 12px;
 }
 
-/* description */
+/* DESCRIPTION */
 .project-card p {
-    color: #94a3b8;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
 }
 
-/* links */
+/* BUTTONS */
 .project-card a {
-    color: #38bdf8;
-    text-decoration: none;
-    font-weight: 500;
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 8px;
     margin-right: 10px;
-    transition: 0.3s;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .project-card a:hover {
-    color: #facc15;
+    background: #0ea5e9;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .project-links {
-    margin-top: auto;
     padding-top: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    #projects {
+        padding: 60px 15px;
+    }
+
+    #projects h2 {
+        font-size: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card a {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
 }
 
 /* ===== CONTACT SECTION ===== */
@@ -482,16 +528,164 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 18px;
 }
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ADD THIS AT THE VERY END OF style.css
+========================================== */
 
-@media (max-width: 768px) {
-    .about p {
-        font-size: 15px;
-        line-height: 1.6;
-        padding: 0 10px;
+/* Tablets */
+@media screen and (max-width: 992px) {
+
+    nav {
+        padding: 15px 20px;
         text-align: center;
     }
 
-    .cta-line {
+    nav h1 {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        float: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    .home {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 20px;
+    }
+
+    .home-content {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+
+    .project-grid,
+    .contact-container,
+    .skills-container {
+        justify-content: center;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 768px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    nav h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .home h2 {
+        font-size: 22px;
+    }
+
+    .home p {
         font-size: 16px;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .btn-main,
+    .btn-outline {
+        width: 220px;
+        margin: 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .about h2,
+    .skills h2,
+    #projects h2,
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .skill-card {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .project-grid,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+
+    nav h1 {
+        font-size: 18px;
+    }
+
+    .home h1 {
+        font-size: 24px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    .home-content {
+        padding: 20px 10px;
+    }
+
+    .btn-main,
+    .btn-outline {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .project-card,
+    .contact-item,
+    .skill-card {
+        box-sizing: border-box;
+    }
+
+    .form-box {
+        width: 90%;
+        box-sizing: border-box;
     }
 }
