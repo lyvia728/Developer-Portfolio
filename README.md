@@ -36,6 +36,7 @@ A simple application that shows current time in different countries around the w
 * CSS
 * JavaScript
 * Python (basic projects)
+* PHP
 * Git & GitHub
 * APIs
 
